@@ -1,6 +1,6 @@
 # Zenkins
 
-Theme based on [Jenkins Material Theme][Jenkins Material Theme][jenkins-material-theme], implementing Zendesk Garden colors to spruce up Jenkins a bit. 
+Theme based on [Jenkins Material Theme][jenkins-material-theme], implementing Zendesk Garden colors to spruce up Jenkins a bit. 
 
 ## Development
 ### Building
@@ -37,13 +37,11 @@ This will generate the following file:
 - Opera 15+
 - Microsoft IE11 and Edge
 
-If you are experiencing issues please let me know! Also, feel free to contribute!
-
 ## License
-http://afonsof.mit-license.org/
+- MIT
 
 ## Credits
-- [Jenkins Material Theme][jenkins-material-theme]
+- [Jenkins Material Theme][jenkins-material-theme] for assembling the package (pretty much everything)
 - [Simple Theme Plugin][simple] for the Simple Theme plugin
 - [Google][google] for the the material design inspiration and the icons
 - [Material Design Icons][material-design-icons] for some extra icons
