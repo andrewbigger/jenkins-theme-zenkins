@@ -334,3 +334,12 @@ pre {
   margin-left: 24px;
   margin-top: 2px;
 }
+
+// Fix config page table width issue 
+// https://issues.jenkins-ci.org/browse/JENKINS-33471
+
+td.setting-main .CodeMirror {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
