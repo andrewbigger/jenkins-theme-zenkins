@@ -2,17 +2,40 @@
 
 Theme based on [Jenkins Material Theme][jenkins-material-theme], implementing Zendesk Garden colors to spruce up Jenkins a bit. 
 
+## Getting Started
+
+Before you begin you need to ensure you have the following installed:
+- npm `brew install npm`
+- grunt `npm install -g grunt`
+
+To build the Jenkins plugin you'll also need:
+- jdk 1.8 or above `brew cask install java`
+- maven `brew install maven`
+
+Then install the dependencies with npm:
+```bash
+npm install
+```
+And you should be good to go.
+
 ## Development
+
 ### Building
 
 CSS file are minified and compressed with Grunt. To prepare the environment:
 
-```
-npm install
+```bash
 grunt
 ```
 This will generate the following file:
 - dist/zenkins.css
+
+To build the jenkins plugin:
+
+```bash
+cd plugin
+mvn
+```
 
 ### Testing before deployment
 
