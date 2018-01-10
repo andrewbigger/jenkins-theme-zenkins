@@ -22,6 +22,16 @@ And you should be good to go.
 
 ### Building
 
+TLDR: Build steps are captured in `build.sh` which performs the following tasks:
+- Compiles stylesheet using `grunt`
+- Executes `mvn clean package` to build the hudson plugin
+
+Ths can be executed by running:
+```bash
+sh build.sh
+```
+#### Build the CSS
+
 CSS file are minified and compressed with Grunt. To prepare the environment:
 
 ```bash
@@ -30,26 +40,28 @@ grunt
 This will generate the following file:
 - dist/zenkins.css
 
+#### Build the Hudson Plugin
+
 To build the jenkins plugin:
 
 ```bash
 cd plugin
-mvn
+mvn clean package
 ```
 
 ### Testing before deployment
 
 1. Install the [Stylish Chrome extension][stylish]
 
-1. Go to Stylish options and click in `Write new style`
+2. Go to Stylish options and click in `Write new style`
 
-1. Paste the theme (zenkins.css) in the code box
+3. Paste the theme (zenkins.css) in the code box
 
-1. Click in `Specify` and set your jenkins domain
+4. Click in `Specify` and set your jenkins domain
 
-1. Click in `Save`
+5. Click in `Save`
 
-1. Go to your Jenkins website and enable the theme in the Stylish Chrome toolbar icon
+6. Go to your Jenkins website and enable the theme in the Stylish Chrome toolbar icon
 
 ## Compatibility
 - Simple Theme plugin 0.3
