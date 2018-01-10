@@ -9,7 +9,6 @@ module.exports = function (grunt) {
 
     var replaceFiles = [
         {src: ['dist/zenkins.css'], dest: 'dist/zenkins.css'},
-        {src:['dist/zenkins.css'], dest: 'plugin/src/main/webapp/zenkins.css'},
         {src: ['plugin/pom.xml'], dest: 'plugin/pom.xml'}
     ];
 
